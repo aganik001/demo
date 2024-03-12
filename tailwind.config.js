@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./public//**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        archivo: "'Archivo Narrow', sans-serif !important",
+      },
+    },
   },
   plugins: [],
 }
