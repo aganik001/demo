@@ -629,8 +629,8 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[-37\.45px\] {
-  margin-top: -37.45px;
+.mt-\[-37\.85px\] {
+  margin-top: -37.85px;
 }
 
 .mt-\[1px\] {
@@ -686,8 +686,12 @@ video {
   height: 100vh;
 }
 
-.max-h-\[150px\] {
-  max-height: 150px;
+.max-h-\[calc\(100vh_-_404\.80px\)\] {
+  max-height: calc(100vh - 404.80px);
+}
+
+.max-h-\[calc\(100vh_-_446px\)\] {
+  max-height: calc(100vh - 446px);
 }
 
 .min-h-10 {
@@ -738,6 +742,10 @@ video {
   min-width: 300px;
 }
 
+.min-w-\[46px\] {
+  min-width: 46px;
+}
+
 .min-w-\[780px\] {
   min-width: 780px;
 }
@@ -754,6 +762,10 @@ video {
   min-width: 95px;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-\[360px\] {
   max-width: 360px;
 }
@@ -768,6 +780,20 @@ video {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotatey(0deg);
+  }
+
+  100% {
+    transform: rotatey(180deg);
+  }
+}
+
+.animate-waving-hand {
+  animation: wave  0.6s ease-in-out 0.2s  alternate;
 }
 
 .grid-flow-row-dense {
@@ -962,6 +988,11 @@ video {
   background-color: rgb(246 203 121 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F70000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F8FC85\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 252 133 / var(--tw-bg-opacity));
@@ -1071,16 +1102,13 @@ video {
   padding-bottom: 3px;
 }
 
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .pt-3 {
@@ -1184,6 +1212,11 @@ video {
   line-height: 1.25;
 }
 
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-\[\#0000FF\] {
   --tw-text-opacity: 1;
   color: rgb(0 0 255 / var(--tw-text-opacity));
@@ -1259,6 +1292,10 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+body{
+  font-family: "Roboto", sans-serif;
+}
+
 .hover\:bg-\[\#00E0E0\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 224 224 / var(--tw-bg-opacity));
@@ -1284,3 +1321,7 @@ video {
   background-color: rgb(255 173 115 / var(--tw-bg-opacity));
 }
 
+.disabled\:bg-\[\#424242\]:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 66 66 / var(--tw-bg-opacity));
+}
